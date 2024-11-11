@@ -1,4 +1,5 @@
 ﻿using ENTITY;
+using Mapper;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -11,7 +12,7 @@ namespace DAL
 {
     public class PartidoData
     {
-      
+      DeporteData deporteData = new DeporteData();
 
         public void modificarPartido(int id, int local, int visitante)
         {            
@@ -52,18 +53,10 @@ namespace DAL
                         {
                             while (reader.Read())
                             {
-                                Partido p = new Partido
-                                {
-                                    IdPartido = Convert.ToInt32(reader["ID_PARTIDO"].ToString()),
-                                    IdDeporte = Convert.ToInt32(reader["ID_DEPORTE"].ToString()),
-                                    EquipoLocal = reader["equipo_local"].ToString(),
-                                    EquipoVisitante = reader["equipo_visitante"].ToString(),
-                                    FechaRegistro = Convert.ToDateTime(reader["fecha_registro"].ToString()),
-                                    FechaPartido = Convert.ToDateTime(reader["fecha_partido"].ToString()),
-                                    MarcadorLocal = Convert.ToInt32(reader["marcador_local"].ToString()),
-                                    MarcadorVisitante = Convert.ToInt32(reader["marcador_visitante"].ToString()),
-                                };
-                                listPartidos.Add(p);
+                                int id = Convert.ToInt32(reader["ID_DEPORTE"].ToString());
+                                Deporte deporte = deporteData.GetById(id.ToString());
+                                Partido partido = PartidoMapper.Map(reader,deporte); 
+                                listPartidos.Add(partido);
                             }
                         }
                     }
@@ -108,7 +101,7 @@ namespace DAL
                         " VALUES(@idDeporte, @equipoLocal, @equipoVisitante, @fecha_reg, @fecha_partido,@marcadorLocal,@marcadorVisitante )";
                     using (SqlCommand command = new SqlCommand(insert, connection))
                     {
-                        command.Parameters.AddWithValue("@idDeporte", partido.IdDeporte);
+                        command.Parameters.AddWithValue("@idDeporte", partido.Deporte.IdDeporte);
                         command.Parameters.AddWithValue("@equipoLocal", partido.EquipoLocal);
                         command.Parameters.AddWithValue("@equipoVisitante", partido.EquipoVisitante);
                         command.Parameters.AddWithValue("@fecha_reg", partido.FechaRegistro);

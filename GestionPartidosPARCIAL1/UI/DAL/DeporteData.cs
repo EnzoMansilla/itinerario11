@@ -1,4 +1,5 @@
 ﻿using ENTITY;
+using Mapper;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -44,6 +45,34 @@ namespace DAL
             }
 
 
+        }
+
+        public Deporte GetById(string id)
+        {
+            try
+            {
+                using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionDB"].ConnectionString))
+                {
+                    con.Open();
+                    string query = "SELECT ID_DEPORTE, DESCRIPCION FROM DEPORTE where ID_DEPORTE = @id";
+                    using (SqlCommand sqlCommand = new SqlCommand(query, con))
+                    {
+                        sqlCommand.Parameters.AddWithValue("@id", id);
+                        using (SqlDataReader reader = sqlCommand.ExecuteReader())
+                        {
+                            while (reader.Read())
+                            {
+                                return DeporteMapper.Map(reader);
+                            }
+                        }
+                    }
+                }
+                return null;
+            }
+            catch (Exception ex)
+            {
+                throw;
+            }
         }
     }
 }

@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ENTITY\ENTITY.csproj" />
+    <ProjectReference Include="..\Mapper\Mapper.csproj" />
   </ItemGroup>
 
 </Project>

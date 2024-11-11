@@ -218,6 +218,20 @@
         "runtime": {
           "bin/placeholder/ENTITY.dll": {}
         }
+      },
+      "Mapper/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "ENTITY": "1.0.0",
+          "System.Data.SqlClient": "4.8.6"
+        },
+        "compile": {
+          "bin/placeholder/Mapper.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Mapper.dll": {}
+        }
       }
     }
   },
@@ -644,11 +658,17 @@
       "type": "project",
       "path": "../ENTITY/ENTITY.csproj",
       "msbuildProject": "../ENTITY/ENTITY.csproj"
+    },
+    "Mapper/1.0.0": {
+      "type": "project",
+      "path": "../Mapper/Mapper.csproj",
+      "msbuildProject": "../Mapper/Mapper.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
       "ENTITY >= 1.0.0",
+      "Mapper >= 1.0.0",
       "System.Configuration.ConfigurationManager >= 8.0.0",
       "System.Data.SqlClient >= 4.8.6"
     ]
@@ -659,11 +679,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\TT\\Documents\\LUG\\LUG_PARCIAL\\GestionPartidosPARCIAL1\\UI\\DAL\\DAL.csproj",
+      "projectUniqueName": "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "C:\\Users\\TT\\Documents\\LUG\\LUG_PARCIAL\\GestionPartidosPARCIAL1\\UI\\DAL\\DAL.csproj",
+      "projectPath": "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\DAL\\DAL.csproj",
       "packagesPath": "C:\\Users\\TT\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\TT\\Documents\\LUG\\LUG_PARCIAL\\GestionPartidosPARCIAL1\\UI\\DAL\\obj\\",
+      "outputPath": "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\TT\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -680,8 +700,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\TT\\Documents\\LUG\\LUG_PARCIAL\\GestionPartidosPARCIAL1\\UI\\ENTITY\\ENTITY.csproj": {
-              "projectPath": "C:\\Users\\TT\\Documents\\LUG\\LUG_PARCIAL\\GestionPartidosPARCIAL1\\UI\\ENTITY\\ENTITY.csproj"
+            "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\ENTITY\\ENTITY.csproj": {
+              "projectPath": "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\ENTITY\\ENTITY.csproj"
+            },
+            "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\Mapper\\Mapper.csproj": {
+              "projectPath": "C:\\Users\\TT\\Desktop\\itinerario11\\GestionPartidosPARCIAL1\\UI\\Mapper\\Mapper.csproj"
             }
           }
         }
