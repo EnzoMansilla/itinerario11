@@ -1,0 +1,16 @@
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\bin\Debug\net8.0\Mapper.deps.json
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\bin\Debug\net8.0\Mapper.dll
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\bin\Debug\net8.0\Mapper.pdb
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\bin\Debug\net8.0\ENTITY.dll
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\bin\Debug\net8.0\ENTITY.pdb
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.csproj.AssemblyReference.cache
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.AssemblyInfoInputs.cache
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.AssemblyInfo.cs
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.csproj.CoreCompileInputs.cache
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.sourcelink.json
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.csproj.Up2Date
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.dll
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\refint\Mapper.dll
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\Mapper.pdb
+C:\Users\TT\Desktop\itinerario11\GestionPartidosPARCIAL1\UI\Mapper\obj\Debug\net8.0\ref\Mapper.dll
